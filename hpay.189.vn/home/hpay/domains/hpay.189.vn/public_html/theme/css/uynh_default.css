@@ -1,0 +1,124 @@
+/*------------reset-----------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,caption,tfoot, thead,th,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, a:link, a:visited { 
+	color: #444444; 
+	font-weight: normal; 
+	text-decoration: none; 
+}
+a:hover { 
+	text-decoration:underline; 
+}
+.list_type ol,.list_type ul{ list-style:circle !important}
+.fleft{ float:left !important; margin-left:0px !important}
+.fright{ float:left; margin-right:0px !important}
+.rr{ float:right !important; margin-right:0px !important}
+.clear{ clear:both}
+
+.control{ width:100%; text-align:right;clear: both}
+.pagination {
+  padding: 10px 10px 0px 10px;
+  background-clip: padding-box;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+.pagination .active{ color: #e74310; background: #f0f0f0}
+.pagination > a, .pagination > span {
+   display: inline-block;
+  margin-left: 5px;
+  padding: 0 6px;
+  min-width: 17px;
+  line-height: 27px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.pagination :first-child {
+  margin-left: 0;
+}
+.pagination > a {
+  text-decoration: none;
+  background-clip: padding-box;
+  border-color: rgba(0, 0, 0, 0.9);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 1px rgba(255, 255, 255, 0.04), inset 0 -1px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 1px rgba(255, 255, 255, 0.04), inset 0 -1px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+.pagination > a:hover {
+  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.pagination > span, .pagination > a:active {
+  color:#EF4537;
+  background: #1c1c1c;
+  background: rgba(255, 255, 255, 0.01);
+  border-color: black rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+.pagination .prev, .pagination .next {
+  font-family: Noteworthy, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.duongdan{margin:15px 0px 0px 0px; padding:0px 15px 12px 0px;background:#fff;border-bottom:1px dashed #DCDCDC}
+.duongdan a{color:#3E3E3E;}
+.duongdan a:hover{ text-decoration:none; color:#fb9b08}
+.duongdan span{color:#3E3E3E;; padding:0px 10px}
+
+.totop{ position:fixed; top:550px; right:10px; width:47px; height:39px; color:#666;text-align:center; cursor:pointer; display:none; text-indent:-9999; background:url(../images/icon.png) left center no-repeat; width:62px; height:64px; background-position:-15px -1368px}
+
+input[type=text], input[type=password]{ padding:5px; color:#333 }
+
+/*---------------------endreset------------------*/

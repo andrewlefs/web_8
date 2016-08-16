@@ -1,0 +1,4 @@
+AuthGroupFile /dev/null
+AuthName "quantri"
+AuthType Basic
+AuthUserFile /home/hgnet/domains/hoanggia.net/.htpasswd/public_html/uploads/.htpasswd

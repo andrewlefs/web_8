@@ -1,0 +1,22 @@
+                                                            <div id="bottom">
+                                                                            <div class="top_bt">
+                                                                                        <div class="menu_bt">
+                                                                                                           <?nav_menu()?>
+                                                                                        </div>
+                                                                                        <div class="thongke"><?counter()?></div>
+                                                                        </div><!--top_bt-->
+                                                                        <div class="clear"></div>
+                                                                        <div class="thongtin">
+                                                                                        <div class="left_tt">
+                                                                                                           <?thongtin()?>
+                                                                                        </div>
+                                                                                        <div class="right_tt">
+                                                                                                            <p class="title">Liên kết với chúng tôi</p>
+                                                                                                            <p><a href=""><img src="<?=TPL_LINK?>/images/twiter.png" alt="" /></a><a href=""><img src="<?=TPL_LINK?>/images/face.png" alt="" /></a><a href=""><img  src="<?=TPL_LINK?>/images/rss.png" alt="" /></a></p>
+                                                                                        </div>
+                                                                        </div>
+                                                        </div><!--bottom-->
+                                        </div><!--pager-->
+                        </div><!--wapper-->
+            </body>
+</html>

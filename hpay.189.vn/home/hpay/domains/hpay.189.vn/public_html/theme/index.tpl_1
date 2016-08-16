@@ -1,0 +1,43 @@
+<div class="main">
+                <div class="top_main">
+                                    <?top_main()?>
+                </div><!--top_main-->
+                <div class="clear"></div>
+                <div class="midle_main">
+                                <div class="box_slide">
+                                                <div id="slider">
+                                                            <a href="">
+                                                                        <img src="<?=TPL_LINK?>/images/slide.png" width="640" alt="">
+                                                            </a>
+                                                            <a href="">
+                                                                        <img src="<?=TPL_LINK?>/images/slide.png" width="640" alt="">
+                                                            </a>
+                                                            <a href="">
+                                                                        <img src="<?=TPL_LINK?>/images/slide.png" width="640" alt="">
+                                                            </a>
+                                                </div><!--slide-->
+                                                <div class="tintuc">
+                                                            <div class="title"><h3></h3></div>
+                                                            <div class="content">
+                                                                            <ul id="carouse1">
+                                                                                            <li><a href="">Viettel khuyến mại 50% từ ngày 20/12/2013 đến ngày 23/12/2013 <span class="trangthai">Đã hết hạn</span></a></li>
+                                                                                            <li><a href="">Viettel khuyến mại 50% từ ngày 20/12/2013 đến ngày 23/12/2013 <span class="trangthai">Đã hết hạn</span></a></li>
+                                                                                            <li><a href="">Viettel khuyến mại 50% từ ngày 20/12/2013 đến ngày 23/12/2013 <span class="trangthai">Đã hết hạn</span></a></li>
+                                                                                            <li><a href="">Viettel khuyến mại 50% từ ngày 20/12/2013 đến ngày 23/12/2013 <span class="trangthai">Đã hết hạn</span></a></li>
+                                                                                            <li><a href="">Viettel khuyến mại 50% từ ngày 20/12/2013 đến ngày 23/12/2013 <span class="trangthai">Đã hết hạn</span></a></li>
+                                                                            </ul>
+                                                            </div>
+                                                </div><!--tintuc-->
+                                </div><!--box_slide-->
+                                <div class="clear"></div>
+                                <div class="nhacungcap">
+                                               <?provider()?>
+                                </div><!--nhacungcap-->
+                                <div class="bong"></div>
+                </div><!--midle_main-->
+                <div class="clear"></div>
+                <div class="bottom_main">
+                                <?bottom_main()?>
+                </div>
+        </div><!--main-->
+        <div class="clear"></div>

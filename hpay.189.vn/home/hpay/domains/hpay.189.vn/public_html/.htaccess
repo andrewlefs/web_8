@@ -1,0 +1,67 @@
+RewriteEngine on  
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+RewriteRule ^index.html$ index.php
+RewriteRule ^lien-he.html$ index.php?Webdesign=contact
+RewriteRule ^gioi-thieu.htm$ index.php?Webdesign=intro
+RewriteRule ^huong-dan.htm$ index.php?Webdesign=guide&id=2
+
+RewriteRule ^login.html$ index.php?Webdesign=login
+RewriteRule ^logout.html$ index.php?Webdesign=logout
+RewriteRule ^forgotpass.html$ index.php?Webdesign=forgotpass
+
+RewriteRule ^register-phone.html$ index.php?Webdesign=register_phone
+RewriteRule ^register.html$ index.php?Webdesign=register
+RewriteRule ^dang-ky-thanh-cong.htm$ index.php?Webdesign=register&status=0k [L]
+RewriteRule ^confirmation/passkey=(.*).htm$ index.php?Webdesign=check_register&passkey=$1
+RewriteRule ^usercp.html$ index.php?Webdesign=editaccount
+RewriteRule ^change-pass.html$ index.php?Webdesign=changepass
+
+RewriteRule ^bank.html$ index.php?Webdesign=bank
+RewriteRule ^add-bank.html$ index.php?Webdesign=bankadd
+
+
+
+#giaodich
+RewriteRule ^giao-dich/nap-tien.html$ index.php?Webdesign=addmoney
+RewriteRule ^giao-dich/nap-card$ index.php?Webdesign=addmoneycard&method=addcard
+RewriteRule ^giao-dich/chuyen-khoan-bang-internet-banking$ index.php?Webdesign=addmoneybanking&method=addbank
+RewriteRule ^request.html$ index.php?Webdesign=request
+RewriteRule ^sendTo.html$ index.php?Webdesign=sendTo&method=sendmoney
+RewriteRule ^tradding.html$ index.php?Webdesign=tradding    
+RewriteRule ^tradding-page-([0-9]+)$ index.php?Webdesign=tradding&position_page=$1
+
+#sản phẩm & dịch vụ
+RewriteRule ^(.*)-([0-9]+).htm$ index.php?Webdesign=services&id_service=$2
+RewriteRule ^buy-card/(.*)-([0-9]+)$ index.php?Webdesign=buy_card&id_company=$2
+#RewriteRule ^product.html$ index.php?Webdesign=product
+#RewriteRule ^product-(.*)-([0-9]+)$ index.php?Webdesign=productdetail&id=$2
+
+RewriteRule ^tin-tuc.html$ index.php?Webdesign=news
+RewriteRule ^tin-tuc-trang-([0-9]+)$ index.php?Webdesign=news&position_page=$1
+RewriteRule ^(.*)-([0-9]+).html$ index.php?Webdesign=newdetail&id=$2
+RewriteRule ^bai-viet/(.*)-([0-9]+)$ index.php?Webdesign=introdetail&id=$2
+RewriteRule ^san-pham-dich-vu-(.*)-([0-9]+)$ index.php?Webdesign=newscompany&id=$2
+
+
+#RewriteRule ^cat/([0-9]+)/(.*).html$        index.php?Webdesign=product&cat=$1
+#RewriteRule ^cat-([0-9]+)-([0-9]+)-(.*).html$ index.php?Webdesign=product&cat=$1&subcat=$2
+
+#phan trang
+#RewriteRule ^cat/([0-9]+)/trang-([0-9]+)$ index.php?Webdesign=product&cat=$1&position_page=$2
+#RewriteRule ^cat-([0-9]+)-([0-9]+)-trang-([0-9]+)$ index.php?Webdesign=product&cat=$1&subcat=$2&position_page=$3
+
+#RewriteRule ^gio-hang-ajax/([0-9]+).htm$ index.php?Webdesign=cart&mode=add-ajax&pid=$1
+#RewriteRule ^gio-hang-ajax/([0-9]+)-([0-9]+).htm$ index.php?Webdesign=cart&mode=add-ajax&pid=$1&qty=$2
+#RewriteRule ^ajaxConfig.htm$ index.php?Webdesign=ajaxConfig
+#RewriteRule ^my-cart.html$  index.php?Webdesign=cart
+#RewriteRule ^update-cart.html$  index.php?Webdesign=cart&mode=update
+#RewriteRule ^emptycart.html$   index.php?Webdesign=cart&mode=emptycart
+#RewriteRule ^checkout.html$  index.php?Webdesign=checkout
+#RewriteRule ^deleteItem/([0-9]+)$ index.php?Webdesign=cart&mode=delete&pid=$1
+
+
+RewriteRule ^ket-qua.html$ index.php?Webdesign=search
+RewriteRule ^ket-qua-tim-kiem-(.*)/trang-([0-9]+)$ index.php?Webdesign=search&text=$1&position_page=$2
+RewriteRule ^hoadon.html$ index.php?Webdesign=hoadon
